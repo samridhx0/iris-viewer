@@ -18,3 +18,20 @@ const observer = new IntersectionObserver(
 for (const node of revealNodes) {
   observer.observe(node);
 }
+
+const heroVideo = document.querySelector('.hero-video');
+const mediaFrame = document.querySelector('.media-frame');
+
+if (heroVideo && mediaFrame) {
+  const syncVideoRatio = () => {
+    if (!heroVideo.videoWidth || !heroVideo.videoHeight) {
+      return;
+    }
+
+    mediaFrame.style.setProperty('--video-ratio', `${heroVideo.videoWidth} / ${heroVideo.videoHeight}`);
+  };
+
+  heroVideo.addEventListener('loadedmetadata', syncVideoRatio);
+  heroVideo.addEventListener('resize', syncVideoRatio);
+  syncVideoRatio();
+}
