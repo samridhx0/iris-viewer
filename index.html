@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iris Image Viewer v1.0</title>
+  <meta name="description" content="Iris Image Viewer v1.0 - a fast, developer-friendly media browser for images and videos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">
+        <span class="brand-mark">I</span>
+        <span class="brand-text">Iris Image Viewer v1.0</span>
+      </a>
+      <nav class="top-nav">
+        <a href="#preview">Preview</a>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+      </nav>
+      <a class="btn btn-outline" href="#download">Download</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section id="preview" class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow reveal">Desktop media browser in Rust</p>
+        <h1 class="reveal delay-1">FAST. FOCUSED. IRIS.</h1>
+        <p class="hero-copy reveal delay-2">
+          Explore your media library with a cleaner flow. Browse screenshots smoothly, inspect details instantly, and keep focus on what matters.
+        </p>
+        <div class="hero-actions reveal delay-3">
+          <a href="#download" class="btn btn-solid">Download Iris</a>
+          <a href="#features" class="btn btn-text">See Features</a>
+        </div>
+
+        <div class="hero-pills reveal delay-4" aria-label="Hero highlights">
+          <span>Quick folder scan</span>
+          <span>Fullscreen preview</span>
+          <span>Low-friction workflow</span>
+        </div>
+      </div>
+
+      <div class="hero-slider reveal delay-2" aria-label="Iris preview video">
+        <div class="media-frame">
+          <video
+            class="hero-video"
+            src="SCREENSHOTS/Video Project 1 (1).mp4"
+            muted
+            autoplay
+            loop
+            playsinline
+            controls
+            preload="metadata"
+            aria-label="Iris product preview video"
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Core</p>
+        <h2>Built to move through media fast.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card reveal">
+          <h3>DRAG + DROP FOLDERS</h3>
+          <p>Add folders instantly and start scanning.</p>
+        </article>
+        <article class="card reveal delay-1">
+          <h3>GRID TO FULLSCREEN</h3>
+          <p>Move from overview to detail in one click.</p>
+        </article>
+        <article class="card reveal delay-2">
+          <h3>SMART VIDEO OPEN</h3>
+          <p>Preview first. Play in default player when needed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="download" class="container section install">
+      <div class="section-head reveal">
+        <p class="eyebrow">Download</p>
+        <h2>Get Iris and start browsing now.</h2>
+      </div>
+      <div class="install-grid">
+        <article class="panel reveal">
+          <h3>Windows x64 Installer</h3>
+          <p class="label">Recommended for most users.</p>
+          <a class="btn btn-solid" href="iris_0.1_installer(x64).exe" download>Download .exe</a>
+        </article>
+        <article class="panel reveal delay-1">
+          <h3>Build from Source</h3>
+          <pre><code>cargo build --release
+./target/release/iris</code></pre>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Iris Image Viewer v1.0</p>
+      <p>Rust-powered media workflow, no fluff.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
