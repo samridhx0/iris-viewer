@@ -179,6 +179,11 @@ body {
   padding: 0.24rem 0.45rem;
 }
 
+.rust-tag {
+  color: #ffb066;
+  font-weight: 700;
+}
+
 h1,
 h2,
 h3 {
