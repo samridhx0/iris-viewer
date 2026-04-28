@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iris Viewer v1.0</title>
-  <meta name="description" content="Iris Viewer v1.0 - a fast, developer-friendly media browser for images and videos.">
+  <title>Iris Viewer</title>
+  <meta name="description" content="Iris is a hardware-accelerated Rust media viewer for images and videos across multiple folders.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="container nav-wrap">
       <a href="#top" class="brand">
         <span class="brand-mark">I</span>
-        <span class="brand-text">Iris Viewer v1.0</span>
+        <span class="brand-text">Iris Viewer</span>
       </a>
       <nav class="top-nav">
         <a href="#preview">Preview</a>
@@ -31,10 +31,10 @@
   <main id="top">
     <section id="preview" class="hero container">
       <div class="hero-content">
-        <p class="eyebrow reveal">Desktop media browser <span class="rust-tag">Made with Rust</span></p>
-        <h1 class="reveal delay-1">FAST. FOCUSED. IRIS.</h1>
+        <p class="eyebrow reveal">Hardware-accelerated media viewer <span class="rust-tag">Made with Rust</span></p>
+        <h1 class="reveal delay-1">YOUR MEDIA, ALL IN ONE GRID.</h1>
         <p class="hero-copy reveal delay-2">
-          Explore your media library with a cleaner flow. Browse screenshots smoothly, inspect details instantly, and keep focus on what matters.
+          Drag and drop images or videos from multiple folders and Iris keeps building one live grid of everything you add.
         </p>
         <div class="hero-actions reveal delay-3">
           <a href="#download" class="btn btn-solid">Download Iris</a>
@@ -67,23 +67,23 @@
       <div class="card-grid">
         <article class="card reveal">
           <h3>DRAG + DROP FOLDERS</h3>
-          <p>Add folders instantly and start scanning.</p>
+          <p>Keep adding folders and Iris updates the grid as your library grows.</p>
         </article>
         <article class="card reveal delay-1">
-          <h3>GRID TO FULLSCREEN</h3>
-          <p>Move from overview to detail in one click.</p>
+          <h3>SHOW IN EXPLORER</h3>
+          <p>Jump straight to the file location from inside Iris.</p>
         </article>
         <article class="card reveal delay-2">
-          <h3>SMART VIDEO OPEN</h3>
-          <p>Preview first. Play in default player when needed.</p>
+          <h3>GPU AUTO DETECTION</h3>
+          <p>Detects a GPU automatically and uses it to help speed up indexing.</p>
         </article>
         <article class="card reveal delay-3">
           <h3>CPU MULTI-THREADING</h3>
-          <p>Uses parallel processing for faster media indexing and smoother browsing.</p>
+          <p>Uses CPU multi-threading to keep indexing fast when your library gets large.</p>
         </article>
         <article class="card reveal delay-4">
-          <h3>GPU DETECTION</h3>
-          <p>Detects available GPU hardware to optimize rendering and playback performance.</p>
+          <h3>IMAGES + VIDEOS</h3>
+          <p>See pictures and videos together in one clean view across all listed folders.</p>
         </article>
       </div>
     </section>
@@ -91,12 +91,12 @@
     <section id="download" class="container section install">
       <div class="section-head reveal">
         <p class="eyebrow">Download</p>
-        <h2>Get Iris and start browsing now.</h2>
+        <h2>Built for fast browsing on Windows.</h2>
       </div>
       <div class="install-grid">
         <article class="panel reveal">
           <h3>Windows x64 Installer</h3>
-          <p class="label">Recommended for most users.</p>
+          <p class="label">Current release for Windows users.</p>
           <a class="btn btn-solid btn-with-icon" href="https://github.com/samridhx0/iris-viewer/releases/download/Windows/iris_installer_.x64.exe" target="_blank" rel="noopener noreferrer">
             <svg class="windows-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path fill="currentColor" d="M2 3.5 10.7 2v9H2v-7.5ZM12.2 1.8 22 0v11h-9.8V1.8ZM2 12.5h8.7v9L2 20v-7.5ZM12.2 12.5H22v11l-9.8-1.8v-9.2Z"/>
@@ -105,7 +105,7 @@
           </a>
         </article>
         <article class="panel reveal delay-1">
-          <h3>Build from Source (Soon)</h3>
+          <h3>Source Build</h3>
           <pre><code>cargo build --release
 ./target/release/iris</code></pre>
         </article>
@@ -115,9 +115,9 @@
 
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p>Iris Viewer v1.0</p>
-      <p>Rust-powered</p>
-      <p>Samridh Gaur / samridh.gaur@outlook.com</p>
+      <p>Iris Viewer</p>
+      <p>Rust-powered image and video viewer</p>
+      <p>Windows release</p>
     </div>
   </footer>
 
